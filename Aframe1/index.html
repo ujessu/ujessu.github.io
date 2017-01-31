@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
     <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+    <script src-="node_modules/aframe-particle-system-component/dist/aframe-particle-system-component.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^3.0.0/dist/aframe-event-set-component.min.js"></script>
 
   </head>
@@ -37,8 +38,14 @@
         event-set__2="_event: mouseenter; material.color: blue"
       ></a-box>
 
-      <a-sphere id="sphere1" position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder id="cylinder1" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-sphere id="sphere1" position="0 1.25 -5" radius="1.25" color="#EF2D5E"
+        event-set__2="_event: mouseenter; material.color: blue"
+      ></a-sphere>
+
+      <a-cylinder id="cylinder1" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"
+        event-set__2="_event: mouseenter; material.color: blue"
+      ></a-cylinder>
+
       <a-plane id="plane1" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
 
