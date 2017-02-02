@@ -6,9 +6,11 @@
     <meta name="description" content="Jessica's First A-Frame Project">
     <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
     <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
-    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
-    <script src-="node_modules/aframe-particle-system-component/dist/aframe-particle-system-component.js"></script>
-    <script src="https://unpkg.com/aframe-event-set-component@^3.0.0/dist/aframe-event-set-component.min.js"></script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script> -->
+    <script src="dist/aframe-particle-system-component.js"></script>
+    <!-- <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script> -->
+    <!-- <script src="https://unpkg.com/aframe-event-set-component@^3.0.0/dist/aframe-event-set-component.min.js"></script> -->
+
 
   </head>
   <body>
@@ -19,19 +21,11 @@
   <a-assets>
 
 
-  <!-- BACKGROUNDS need to replace w/my own animations -->
-      <img id="showDefault" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
-      <img id="showSun" src="https://c1.staticflickr.com/1/297/32106908560_16594dfe60_k.jpg">
-      <img id="showDark" src="https://c2.staticflickr.com/6/5612/31327036313_b91d72c973_k.jpg">
-      <img id="showCloud" src="https://c1.staticflickr.com/1/298/32505072935_e0f0c68d44_k.jpg">
-
-
 
   </a-assets>
+      <a-entity id="precip" particle-system=""></a-entity>
+      <a-sky id="sky" color="#6EBAA7"></a-sky>
 
-
-
-  <a-sky id="sky" src="#showDefault"></a-sky>
 
       <!-- //basic hello world -->
       <a-box id="box1" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"
